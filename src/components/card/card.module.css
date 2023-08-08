@@ -1,0 +1,9 @@
+.card {
+  border: 1px solid red;
+  background: #fff;
+  border-radius: 5px;
+  width: 350px;
+  height: auto;
+  /* max-height: 200px; */
+  margin: auto;
+}
