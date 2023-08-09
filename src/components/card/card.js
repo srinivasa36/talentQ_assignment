@@ -6,8 +6,13 @@ const Card = ({ card }) => {
     <div className={styles.card}>
       <h3>{card.card_title}</h3>
       <p>Data: {card.data_value}</p>
-      {card.button && <button>{card.button_name}</button>}
-      {/* Display other card content based on data_type */}
+      {card.data && <div>{card.data_type}</div>}
+      {card.button && (
+        <button className={styles["card_btn"]}>{card.button_name}</button>
+      )}
+      {card.link && (
+        <button className={styles.link_btn}>{card.link_name}</button>
+      )}
     </div>
   );
 };

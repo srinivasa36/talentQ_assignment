@@ -7,4 +7,10 @@
 }
 body {
   font-family: "Nunito";
+  overflow-x: hidden;
+}
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
 }

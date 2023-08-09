@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid red;
+  border: 1px solid rgb(0, 0, 0, 0.5);
   background: #fff;
   border-radius: 5px;
   width: 350px;
@@ -7,4 +7,35 @@
   /* max-height: 200px; */
   margin: auto;
   box-shadow: none;
+  text-align: center;
+  padding: 20px;
+}
+.card:not(:last-child) {
+  margin-bottom: 20px;
+}
+.card_btn {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background: rgb(0, 0, 255, 0.7);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 10px;
+  font: 600 16px "Nunito";
+  cursor: pointer;
+}
+.link_btn {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+}
+.link_btn:hover {
+  text-decoration: underline;
+  color: blue;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }

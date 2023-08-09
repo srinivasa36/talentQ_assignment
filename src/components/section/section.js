@@ -2,10 +2,11 @@ import React from "react";
 import SectionItem from "../section/sectionItem";
 import sectionData from "../section/sectionData";
 import cardData from "../card/cardData";
+import styles from "./section.module.css";
 
 const Section = () => {
   return (
-    <div className="dashboard">
+    <div className={styles["section_wrapper"]}>
       {sectionData.map((section) => (
         <SectionItem
           key={section.id}

@@ -17,7 +17,14 @@ const SectionItem = ({ section, cards }) => {
           ))}
       </div>
       {!showAllCards && cards.length > maxVisibleCards && (
-        <button onClick={() => setShowAllCards(true)}>See More</button>
+        <div className={styles["see_more_btn_wrapper"]}>
+          <button
+            onClick={() => setShowAllCards(true)}
+            className={styles["see_more_btn"]}
+          >
+            See More +
+          </button>
+        </div>
       )}
     </div>
   );
